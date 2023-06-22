@@ -5,19 +5,63 @@
 </head>
 <body>
     <form action="resultados.html" method="get">
+        <!--Las etiquetas de 'form' facilitan al usuario ingresar datos que se enviarán al servidor para su procesamiento,
+        como nombre, dirección de correo electrónico, contraseña, número de teléfono, etc. Ademas tienen el atributo 'action' el 
+        cual va a contener la url del servidor, es decir, a donde nosotros queremos que vayan estos datos recopilados en el formulario
+        y el atributo 'method' el cual va a contener el metodo en el cual nosotros queremos que se envien estos datos, siendo
+        'get o post' segun sea el caso, con 'GET' estos datos van en la URL teniendo esta un maximo de caracteres de 250, asi que 
+        si estamos trabajando con un formulario muy extenso esta no nos va a funcionar y tendriamos que usar el metodo POST.
+         obtener/publicar -->
         <div>
             <label for="nombreUsuario">Nombre de usuario</label>
-            <input name="nombreUsuario" id="nombreUsuario">
+            <!--Dentro de los formularios, estan las 'labels' estas sirven para identificar el dato que estamos pidiendo al usuario,
+            dentro de estas estan los atributos 'for' el cual nos ayuda a identificar el campo, en este caso es 'nombreUsuario'-->
+            <input type="text" name="nombreUsuario" id="nombreUsuario" required/>
+            <!--La etiqueta de 'input' define el control de entrada, esta a su vez tiene atributos que ayudan a definir los parametros.
+            Un de estos atributos es 'type' el cual nos define el parametro de entrada, si es texto, si es numerico, si es un email.
+            Otro parametro es 'id' dentro de el debemos colocar el mismo nombre que habiamos puesto en el atributo de 'for' para que
+            cuando el usuario haga click sobre el nombre de la etiqueta, este haga foco en el recuadro de ingreso.
+            Otro atributo muy importante es el de 'name' el cual sirve para que nuestro servidor identifique e interprete el dato 
+            ingresado en el formulario, ejemplo. El 'name' es nombreUsuario y esta llave va a contener el nombre ingresado por el 
+            usuario, asi el servidor guardara ese dato y lo asociara a 'nombreUsuario'.
+            Tambien podemos agregar mas atributos como el de 'required' el cual le notificara al usuario que este es un campo obligatorio
+            y que debe ser rellenado.-->
         </div>
-        <div>
-            <label for="comentarios">comentarios</label>
-            <textarea name="comentarios" id="comentarios"></textarea>
-        </div>
+        <br>
+        <!--La etiqueta 'br' tiene como objetivo dar un salto de linea sencillo o simple-->
         <div>
             <label for="password">Contraseña</label>
-            <input name="password" id="password">
+            <input type="password" name="password" id="password" required/>
+            <!--Aqui tenemos el atributo de tipo 'password', este se encarga de ocultar cada caracter ingresado en el campo de texto-->
         </div>
-        <button>Enviar</button>
+        <br>
+        <div>
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios"></textarea>
+            <!--La etiqueta de 'textarea' o area de texto nos sirve para campos de textos mas amplios, como para comentarios.
+            Este a su vez tiene la propiedad de cambiar de tamaño.-->
+        </div>
+        <br>
+        <div>
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="email" id="email" required/>
+        </div>
+        <br>
+        <div>
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" required/>
+            <!--Aqui tenemos el atributo de tipo 'date' este se encarga crear un campo de texto tipo fecha tipo calendario-->
+        </div>
+        <br>
+        <div>
+            <label for="edad">¿Cual es tu edad?</label>
+            <input type="number" name="edad" id="edad" required min="0" max="100"/>}
+            <!--Otros atributos para la etiqueta de input es: 'min' que determina el valor minimo a ingresar en el campo de texto,
+            asi como tambien el atributo 'max' que determinará el valor maximo en el campo de texto.-->
+        </div>
+        <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
