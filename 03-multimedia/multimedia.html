@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia con HTML</title>
+    </head>
+    <body>
+        <img src="imagenes/logohtml.png" alt="logo HTML5" width="300" height="300"/>
+        <!--La etiqueta 'img' tiene atributos muy importantes, unos de ellos son 'src' y 'alt'. El atributo 'src' se encarga de contener
+        la direccion, la url donde se encuentra este archivo y renderizarlo para mostrarlo. Y el atributo de 'alt' se encarga de mostrar 
+        el texto a modo de descripcion del imagen en caso de que esta no se muestre, no se haya renderizado aun. Ejemplo: Logo HTML5
+        Otros atributos son los de ancho y alto ó 'width y height' estos se encargan de dar dimensiones a la imagenes agragadas-->
+        <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1024px-ChatGPT_logo.svg.png" alt="logo chatGPT" width="300" height="300" />
+        <!--Aqui acabamos de utilizar una imagen de la web, que no esta en ninguna de nuestras carpetas y la usamos con solo su direccion
+        de imagen-->
+        <video controls autoplay muted width="300" height="300">
+        <!--Podemos agregar los controles del video con el atributo 'controls' para que el usuario pueda pausar, reproducir, adelantar,
+        etc. Asi como tambien del autoplay el cual permite que el video se reproduzca ni bien cargue la pagina web.
+        Tambien es necesario agregar dimensiones al video.-->
+            <source src="nombredelaurldelvideo" type="video/mp4"/>
+            <!--Para agregar un video lo hacemos con las etiquetas de 'video' y para la ruta de donde extraemos el video es necesario
+            la etiqueta 'source' seguida del atributo 'src' y la url donde se encuentra el archivo, si este archivo de video es 
+        mp4, debemos agregar el atributo 'type' y definirlo de la siguiente manera: type="video/mp4" -->
+        </video>
+        <audio controls autoplay muted>
+            <source src="direcciondelacarpetadondeestaelaudio" type="audio/mp3">
+        </audio>
+    </body>
+</html>

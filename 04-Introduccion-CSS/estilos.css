@@ -1,0 +1,61 @@
+h1 {
+    color: red;
+}
+/* Para agregar estilos a nuestras etiquetas debemos marcar la etiqueta que queremos modificar, 
+seguido de unos corchetes donde dentro de ellos va nuestras instrucciones, sea color, tamaño de la
+fuente, etc. Cabe destacar que se modificara cada etiqueta menciona con dichos valores, es decir,
+si tenemos 4 etiquetas <h1> todas ellas seran modificadas con los estilos indicados dentro de
+los corchetes */
+p {
+    color: blue;
+    font-size: 20pt; /* El tamaño de las fuentes su nomenclatura es pt 'puntos' */
+}
+
+/* Ahora, para ingresar a los selectores de 'id' debemos insertar un '#' este numeral indica que el
+selector que se va utilizar es de tipo 'id' seguido del nombre del selector, ej: '#noticiaEstelar1'*/
+
+#noticiaEstelar1 {
+    color: blueviolet;
+    font-size: 16pt;
+}
+/* Asi mismo podriamos usar un selector de tipo 'id' en distintas etiquetas dentro de nuestro doc de
+HTML, por ejemplo, en una etiqueta de <span> utilizar nuestro 'id="noticiaEstelar1"'. Por lo tanto
+tambien estariamos modificandola, en cambio si colocamos antes del '#' ejemplo: 'p#noticiaEstelar1'
+unicamente se van a modificar las etiquetas de 'parrafo' <p> que contengan el selector 
+'id="noticiaEstelar1"' */
+
+/* Ahora, para ingresar a selectores de tipo 'class' debemos insertar un '.' este punto indica que el
+selector a utilizar es de tipo 'class' seguido del nombre del selector, ej: .noticiasEstelar  */
+
+.noticiasEstelar {
+    color:cyan;
+    font-size: 16pt;
+}
+
+.encabezado {
+    color:chartreuse; /* cambiamos el color del texto */
+    font-size: 22;  /* aumentamos el tamaño de la fuente (letra) a 22pt */
+    text-transform: uppercase; /* transformamos el texto a mayusculas */
+}
+
+/* Y como selector universal tenemos el '*' la cual va a modificar a todas aquellas etiquetas que
+no esten bajo un parametro o el parametro indicado, ej: 
+
+* {
+    color: white;
+}
+
+todas aquellas etiquetas que no tengan asignado un color, tomaran como parametro de color el
+mencionado por el selector universal. Tambien que todas las etiquetas con el selector de tipo id
+'x' se comporten de cierta manera, ejemplo a contianucion */
+
+*.warning {
+    color:red;
+}
+
+/* Ahora veremos como seleccionar distintos selectores y que estos tengas a su vez el mismo 
+estilo */
+
+.autor, .fecha, .pais { /* de esta manera separada por ',' seleccionamos distintos selectores */
+    text-decoration: line-through;
+}

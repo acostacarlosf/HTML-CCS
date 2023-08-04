@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;1,200&display=swap');
+html {
+    font-family: 'Source Code Pro', monospace, sans-serif;
+}
+
+
+div {
+    border: 1px solid gray;
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+/*Posicionamiento relativo - se posiciona en relacion al posicionamiento original*/
+
+.relative {
+    position: relative;
+    left: 50px;
+    margin-left: 10px;
+}   
+
+/*Posicionamiento fijo - se posiciona en relacion a la pantalla*/
+
+.fixed {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background-color: greenyellow;
+    z-index: 10;
+}
+
+/*Posicionamiento absoluto - se posiciona en relacion al padre (elemento padre o que lo integra)*/ 
+
+.absolute {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+
+.relative.contenedor {
+    width: 300px;
+    height: 500px;
+    background-color: coral;
+}
+
+/*Posicionamiento sticky - al hacer scroll cambia de posicionamiento*/
+
+.sticky {
+    position: sticky;
+    background-color: cornflowerblue;
+    color: azure;
+    top: 0px;
+    z-index: 2;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utilidades CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- De esta manera importamos una hoja de estilos interna-->
+
+    <!-- Otra manera de estilos es a traves de la etiqueta de 'style', ej:-->
+    <style>
+        p {
+            color:rebeccapurple;
+        }
+    </style>
+
+    <!-- O tamien podemos importar estilos desde enlaces externos, en este caso una pagina web.-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+    <!-- Ahora que importamos estos estilos, podemos traerlos a nuestro DOC HTML-->
+</head>
+<body>
+    <p>Hola como estas</p>
+    <button class="pure-button"> REFRESH </button>
+    <style>
+        .button-success {
+            background: rgb(28, 184, 65);
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+        }   
+            /* Cambiando el boton a color verde 
+            Cambiando el color del texto a blanco
+            Dando bordes al boton*/
+    </style>
+    <button class="button-success pure-button">Success Button</button>
+</body>
+</html>

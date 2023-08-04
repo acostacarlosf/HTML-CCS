@@ -1,0 +1,67 @@
+.colores {
+    color:orangered;
+}
+
+.color-hexadecimal {
+    color: #B388EB;    
+}
+/* Con el parametro hexadecimal podemos acceder a paletas de colores */
+/* Tengamos claro que 'color' solo afecta el color del texto */
+
+.color-rgb {
+    color: rgb(243, 6, 204)
+}
+
+.color-rgba {
+    color: rgba(170, 88, 50, 1)
+}
+
+/* Otro metedo de agregar color es con el metodo 'RGB' que por sus siglas se refiere a 
+Red , Green, Blue los cuales van a cambiar segun la composicion de cada uno, como en el 
+ejemplo de arriba, que tiene 50 del Red, 25 del Green y 5 del Blue que da como resultado
+un purpura muy oscuro */
+/* Tambien tenemos el metodo 'RGBA' que al igual que rgb, contiene rojos, verdes y azules 
+ademas de la capa de transparencia que se pueda agregar al color, el cual va desde el 0 al 1 */
+
+/* Ahora veremos como agregar fondo a un contenedor, en el ejemplo agregamos la clase 'fondo' dentro
+de un 'div' por lo tanto, todo lo que este dentro de esas etiquetas de 'div' obtendran el estilo. */
+
+/* fondos */
+
+.fondo {
+    background-color: aqua; /*Aca elegimos un color de fondo*/
+}
+/* Para los colores de fondos podemos usar los predeterminados, tambien los rgb, rgb y los hexadecimal */
+
+.fondo2 {
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+    /*Aca elegimos una imagen de fuente externa para nuestro fondo*/
+}   
+
+.fondo3 {
+    background-image: url(imagenes/imagen.jpg);
+    /*Aca elegimos una imagen de fuente interna para nuestro fondo*/
+}
+
+/* Tamaños */
+
+.ancho {
+    background-color: #B388EB;
+    width: 100px;
+}
+
+.alto {
+    background-color: brown;
+    height: 200px;
+}
+
+.tarjeta {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    /*boder-top: none;*/
+    padding: 10px 20px;
+    /*padding: 10px 20px 30px 40px;*/ /*Siempre va en sentido del reloj*/
+    margin: 10px; /*De esta manera, tanto de izquierda y derecha y de arriba y abajo se modifican*/
+    /*margin: 10px 5px;*/
+}

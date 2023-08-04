@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,400;0,600;1,200&display=swap');
+/*La manera de importar estas fuentes externas seria inertandolas dentro de una etiqueta style,
+pero ensuciaria nuestro documento HTML, insertarla dentro de nuestra hoja de estilos 'textos.css'
+es una mejor practica estetica y limpia del codigo HTML*/
+
+html {
+    font-family: 'Source Code Pro', monospace, sans-serif;
+    /*font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    font-size: larger; /*Se pueden usar pixeles, puntos o como esta actualmente*/
+    font-weight: none; /*El peso (negrilla) que tiene la fuente, empieza en 100*/
+    font-style: italic; /*Estilo de la fuente, italica, subrayada, etc.*/
+}

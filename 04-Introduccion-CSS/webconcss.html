@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trabajando con CSS</title>
+    <!-- Para poder integrar a nuestra pagina de HTML los estilos del CCS, lo hacemos utilizando
+    la etiqueta 'link' seguido del atributo 'rel' el cual se utiliza para definir la relacion entre
+    el archivo enlazado (stylesheet) y nuestro documento HTML-->
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Nuestra hioja de estilos de CCS lleva por nombre 'estilos.css' la cual llamamos con 
+    el atributi 'href'-->
+</head>
+<bodyhs>
+    <h1>Custom Style Sheet</h1>
+    <p>Esto de aqui es un parrafo</p>
+    <br>
+        <!-- En este caso estoy agregando una etiqueta <h2> la cual nuestro documento de estilos no 
+        esta alterando, seguida de 2 etiquetas de <p> parrafo las cuales queremos que sean de otro
+        color y no que lleven el mismo color de la etiqueta <p> de la linea de arriba, para ello 
+        debemos usar selectores para que cada etiqueta por separado se comporte de maneras diferentes
+        una de estos selectores son los 'id' o con las clases 'class'-->
+    <h2 class="encabezado">Esta es la seccion de noticias 24hs</h2>
+    <p id="noticiaEstelar1">Noticia estelar numero 1</p>
+    <p class="noticiasEstelar">Noticia estelar numero 2</p>
+    <p class="warning">¡PELIGRO!</p>
+    <button class="warning">ESTAS EN PELIGRO, PRESS TO EXIT</button>
+    <div>
+        <p class="autor">Autor: Carlos D. Flores</p>
+        <p class="fecha">Fecha: 31/03/1960</p>
+        <p class="pais">Pais: Portugal</p>
+    </div>
+</bodyhs>
+</html>
